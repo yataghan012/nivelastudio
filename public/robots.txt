@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nivelastudio.netlify.app/sitemap.xml

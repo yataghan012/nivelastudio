@@ -1,11 +1,26 @@
-<div align="center">
+# Nivela Studio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+[Nivela Studio](https://nivelastudio.netlify.app) is a freelance web design agency based in Córdoba, Argentina. The agency specializes in creating professional websites, landing pages, and providing SEO services for businesses locally and across Latin America.
 
-  <h1>Built with AI Studio</h2>
+## Overview
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+This repository contains the source code for the Nivela Studio website, showcasing the agency's portfolio, services, and contact information. 
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Structure
 
-</div>
+- **Home (`/`)**: Main entry point introducing the agency.
+- **Servicios (`/servicios`)**: Detailed breakdown of web design and SEO services offered.
+- **Sobre Mí (`/about`)**: Background information and story of the founder, Tomás Prado.
+- **Proyectos**: 
+  - Amarena Pastelería (`/amarena`)
+  - BioArTec Orthopedic (`/bioartec`)
+
+## Technologies Used
+
+- **HTML5 & CSS3**: Core mapping up and styling.
+- **JavaScript**: For interactive elements and animations.
+- **Vite**: Used to bundle and build the project for production.
+
+## Live Site
+
+You can visit the live version of this website at [https://nivelastudio.netlify.app](https://nivelastudio.netlify.app).

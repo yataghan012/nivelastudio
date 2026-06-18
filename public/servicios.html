@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ══ SEO PRINCIPAL ══ -->
+  <title>Servicios | Nivela Studio — Agencia de Diseño Web en Argentina</title>
+  <meta name="description" content="Planes de diseño web desde $297 USD. Landing pages, sitios multipágina y e-commerce para negocios en Argentina y toda Latinoamérica. Nivela Studio, agencia de diseño web en Córdoba.">
+  <meta name="keywords" content="diseño web Argentina precio, landing page Argentina, sitio web profesional Argentina, e-commerce Argentina, agencia web precios, páginas web Córdoba, diseño web barato Argentina, presupuesto página web">
+  <meta name="author" content="Nivela Studio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nivelastudio.netlify.app/servicios">
+
+  <!-- ══ OPEN GRAPH ══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nivelastudio.netlify.app/servicios">
+  <meta property="og:title" content="Servicios | Nivela Studio — Diseño Web en Argentina">
+  <meta property="og:description" content="Landing pages desde $297 USD. Sitios multipágina y e-commerce para tu negocio en Argentina y Latinoamérica.">
+  <meta property="og:image" content="https://nivelastudio.netlify.app/assets/img/portrait.jpg">
+  <meta property="og:site_name" content="Nivela Studio — Diseño Web">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- ══ HREFLANG ══ -->
+  <link rel="alternate" hreflang="es" href="https://nivelastudio.netlify.app/servicios">
+  <link rel="alternate" hreflang="es-AR" href="https://nivelastudio.netlify.app/servicios">
+  <link rel="alternate" hreflang="x-default" href="https://nivelastudio.netlify.app/servicios">
+
+  <!-- ══ SCHEMA MARKUP ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Diseño Web Profesional para Negocios",
+    "provider": {
+      "@type": "Organization",
+      "name": "Nivela Studio",
+      "url": "https://nivelastudio.netlify.app",
+      "telephone": "+543513714586",
+      "email": "yataghan073@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Córdoba",
+        "addressCountry": "AR"
+      }
+    },
+    "areaServed": ["Argentina", "Latinoamérica", "América"],
+    "description": "Diseño web profesional para negocios en Argentina y Latinoamérica. Landing pages, sitios multipágina y e-commerce.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Plan Esencial — Landing Page",
+        "price": "297",
+        "priceCurrency": "USD",
+        "description": "Sitio de una página, responsive, formulario de contacto, SEO básico."
+      },
+      {
+        "@type": "Offer",
+        "name": "Plan Estándar — Multipágina",
+        "price": "697",
+        "priceCurrency": "USD",
+        "description": "Sitio de 5–8 páginas, SEO completo, blog, analytics."
+      },
+      {
+        "@type": "Offer",
+        "name": "Plan Premium — E-commerce + IA",
+        "price": "1497",
+        "priceCurrency": "USD",
+        "description": "Tienda online completa, agente de IA, SEO avanzado, pasarela de pago."
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="./assets/css/jquery.fullPage.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- ══ GOOGLE ANALYTICS 4 ══
+       Reemplazá G-XXXXXXXXXX con tu ID y descomentá
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  -->
+
+  <style>
+    /* ══════════════════════════════════════════
+       SERVICIOS PAGE — EMBEDDED STYLES
+       Uses CSS vars from common.css
+    ══════════════════════════════════════════ */
+
+    /* ─── Hero gradient background ─── */
+    .image__servicios {
+      background: linear-gradient(135deg, #072142 0%, #061c37 45%, #3a0f55 100%);
+    }
+
+    /* ─── Light section wrapper ─── */
+    .srv-light {
+      background: #fff;
+      padding: 11.2rem 0;
+    }
+    .srv-gray {
+      background: #f2f4f5;
+      padding: 11.2rem 0;
+    }
+    .srv-dark {
+      background: var(--bg-main);
+      padding: 11.2rem 0;
+    }
+    @media screen and (max-width:800px) {
+      .srv-light, .srv-gray, .srv-dark { padding: 6.4rem 0; }
+    }
+    @media screen and (max-width:420px) {
+      .srv-light, .srv-gray, .srv-dark { padding: 4.8rem 0; }
+    }
+
+    /* ─── Heading overrides for dark sections ─── */
+    .srv-dark .heading,
+    .srv-dark .heading-num {
+      color: rgba(255,255,255,0.07) !important;
+    }
+    .srv-dark .heading {
+      color: var(--white) !important;
+    }
+
+    /* ─── Section intro sub-text ─── */
+    .srv-intro-text {
+      font-size: 1.8rem;
+      color: var(--text-main);
+      max-width: 520px;
+      line-height: 1.8;
+    }
+    @media screen and (max-width:420px) {
+      .srv-intro-text { font-size: 1.4rem; }
+    }
+
+    /* ════════════════════════════════
+       01 — STATS
+    ════════════════════════════════ */
+    .srv-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.4rem;
+      margin-top: 6.4rem;
+    }
+    @media screen and (max-width:800px) {
+      .srv-stats { grid-template-columns: 1fr; max-width: 400px; }
+    }
+    .srv-stat {
+      background: var(--bg-main);
+      border-radius: 12px;
+      padding: 4rem 3.2rem;
+      text-align: center;
+    }
+    .srv-stat__number {
+      font-family: "futura_b", sans-serif;
+      font-size: 7.2rem;
+      color: var(--accent-pink);
+      line-height: 1;
+      display: block;
+      letter-spacing: -0.02em;
+    }
+    .srv-stat__label {
+      font-size: 1.4rem;
+      color: var(--text-light-gray);
+      margin-top: 1.6rem;
+      line-height: 1.7;
+    }
+    .srv-callout {
+      background: var(--accent-pink);
+      color: var(--white);
+      text-align: center;
+      padding: 2.4rem 4rem;
+      border-radius: 8px;
+      font-size: 1.7rem;
+      font-family: "futura_m";
+      letter-spacing: 0.05em;
+      margin-top: 3.2rem;
+      line-height: 1.5;
+    }
+    @media screen and (max-width:420px) {
+      .srv-stat__number { font-size: 5.6rem; }
+      .srv-callout { font-size: 1.4rem; padding: 2rem 2.4rem; }
+    }
+
+    /* ════════════════════════════════
+       02 — PLANES
+    ════════════════════════════════ */
+    .srv-plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.4rem;
+      margin-top: 6.4rem;
+      align-items: start;
+    }
+    @media screen and (max-width:900px) {
+      .srv-plans-grid { grid-template-columns: 1fr; max-width: 500px; }
+    }
+
+    .srv-plan {
+      background: var(--bg-main);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 4rem 3.2rem 3.2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform .3s, border-color .3s;
+    }
+    .srv-plan:hover {
+      transform: translateY(-6px);
+    }
+    .srv-plan--popular {
+      border-color: var(--accent-pink);
+      background: linear-gradient(175deg, #0d2348 0%, var(--bg-main) 100%);
+    }
+    .srv-plan__badge {
+      position: absolute;
+      top: -1.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-pink);
+      color: var(--white);
+      font-size: 1.2rem;
+      font-family: "futura_b";
+      letter-spacing: 0.15em;
+      padding: 0.7rem 2.2rem;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+    .srv-plan__eyebrow {
+      font-size: 1.1rem;
+      color: var(--text-main);
+      letter-spacing: 0.25em;
+      font-family: "futura_m";
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+    .srv-plan__name {
+      font-size: 3rem;
+      font-family: "futura_m";
+      color: var(--white);
+      letter-spacing: 0.12em;
+      line-height: 1;
+    }
+    .srv-plan__type {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      margin-top: 0.6rem;
+      margin-bottom: 3.2rem;
+    }
+    .srv-plan__price-old {
+      font-size: 1.8rem;
+      color: var(--text-main);
+      text-decoration: line-through;
+      display: block;
+    }
+    .srv-plan__price {
+      font-size: 5.2rem;
+      font-family: "futura_b";
+      color: var(--white);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .srv-plan--popular .srv-plan__price { color: var(--accent-pink); }
+    .srv-plan__price-note {
+      font-size: 1.3rem;
+      color: var(--text-main);
+      margin-top: 0.6rem;
+      display: block;
+    }
+    .srv-plan__divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      margin: 2.8rem 0;
+    }
+    .srv-plan__features {
+      list-style: none;
+      flex: 1;
+    }
+    .srv-plan__features li {
+      font-size: 1.45rem;
+      color: var(--text-light-gray);
+      padding: 1.1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      line-height: 1.5;
+    }
+    .srv-plan__features li::before {
+      content: '✓';
+      color: var(--accent-pink);
+      font-family: "futura_b";
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .srv-plan__cta {
+      display: block;
+      text-align: center;
+      margin-top: 3.2rem;
+      padding: 1.7rem 2.4rem;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      font-family: "futura_b";
+      letter-spacing: 0.12em;
+      transition: all .3s;
+      color: var(--white);
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.18);
+    }
+    .srv-plan--popular .srv-plan__cta {
+      background: var(--accent-pink);
+      border-color: var(--accent-pink);
+    }
+    .srv-plan__cta:hover {
+      transform: translateY(-3px);
+      background: var(--accent-pink);
+      border-color: var(--accent-pink);
+      color: var(--white);
+      opacity: 1;
+    }
+    .srv-plans-note {
+      font-size: 1.3rem;
+      color: var(--text-main);
+      text-align: center;
+      margin-top: 3.2rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* ════════════════════════════════
+       03 — POR QUÉ CONMIGO
+    ════════════════════════════════ */
+    .srv-whyme-list {
+      list-style: none;
+      margin-top: 4.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 640px;
+    }
+    .srv-whyme-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      font-size: 1.8rem;
+      color: var(--accent-blue);
+      font-family: "futura_m";
+      letter-spacing: 0.04em;
+      line-height: 1.5;
+    }
+    .srv-whyme-item::before {
+      content: '→';
+      color: var(--accent-pink);
+      font-size: 2rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .srv-quote {
+      margin-top: 5.6rem;
+      padding-left: 3.2rem;
+      border-left: 4px solid var(--accent-pink);
+      font-size: 2.4rem;
+      font-family: "futura_m";
+      font-style: italic;
+      color: var(--accent-blue);
+      letter-spacing: 0.04em;
+      line-height: 1.4;
+    }
+    @media screen and (max-width:800px) {
+      .srv-whyme-item { font-size: 1.5rem; }
+      .srv-quote { font-size: 1.8rem; }
+    }
+
+    /* ════════════════════════════════
+       04 — EL PROCESO
+    ════════════════════════════════ */
+    .srv-process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3.2rem;
+      margin-top: 6.4rem;
+    }
+    @media screen and (max-width:900px) {
+      .srv-process-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media screen and (max-width:480px) {
+      .srv-process-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+    }
+    .srv-step__num {
+      font-family: "futura_b";
+      font-size: 7.2rem;
+      color: var(--accent-pink);
+      opacity: 0.25;
+      line-height: 1;
+      display: block;
+      letter-spacing: -0.02em;
+    }
+    .srv-step__title {
+      font-size: 1.5rem;
+      font-family: "futura_m";
+      color: var(--white);
+      letter-spacing: 0.12em;
+      margin-top: 2rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.3;
+    }
+    .srv-step__text {
+      font-size: 1.4rem;
+      color: var(--text-main);
+      line-height: 1.8;
+    }
+    .srv-process-footer {
+      margin-top: 6.4rem;
+      text-align: center;
+    }
+    .srv-delivery {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      letter-spacing: 0.04em;
+      line-height: 2;
+    }
+    .srv-delivery span {
+      color: var(--accent-pink);
+      font-family: "futura_m";
+    }
+    .srv-guarantee {
+      font-size: 1.5rem;
+      font-family: "futura_m";
+      color: var(--white);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      display: block;
+    }
+
+    /* ════════════════════════════════
+       05 — SERVICIOS ADICIONALES
+    ════════════════════════════════ */
+    .srv-addons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.4rem;
+      margin-top: 6.4rem;
+    }
+    @media screen and (max-width:900px) {
+      .srv-addons-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media screen and (max-width:480px) {
+      .srv-addons-grid { grid-template-columns: 1fr; }
+    }
+    .srv-addon {
+      background: var(--bg-main);
+      border-radius: 12px;
+      padding: 3.2rem;
+      border-top: 3px solid transparent;
+      transition: border-color .3s, transform .3s;
+    }
+    .srv-addon:hover {
+      border-top-color: var(--accent-pink);
+      transform: translateY(-4px);
+    }
+    .srv-addon__icon {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 1.8rem;
+    }
+    .srv-addon__name {
+      font-size: 1.7rem;
+      font-family: "futura_m";
+      color: var(--white);
+      letter-spacing: 0.08em;
+      margin-bottom: 1.2rem;
+      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .srv-addon__soon {
+      font-size: 1rem;
+      color: var(--accent-pink);
+      letter-spacing: 0.1em;
+      background: rgba(255,77,90,0.12);
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      font-family: "futura_m";
+    }
+    .srv-addon__text {
+      font-size: 1.4rem;
+      color: var(--text-main);
+      line-height: 1.8;
+    }
+
+    /* ════════════════════════════════
+       06 — PAGOS
+    ════════════════════════════════ */
+    .srv-payments-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 6.4rem;
+    }
+    @media screen and (max-width:900px) {
+      .srv-payments-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media screen and (max-width:480px) {
+      .srv-payments-grid { grid-template-columns: 1fr; }
+    }
+    .srv-payment {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 3.2rem 2.4rem;
+      transition: border-color .3s;
+    }
+    .srv-payment--rec {
+      border-color: var(--accent-pink);
+    }
+    .srv-payment__name {
+      font-size: 2.2rem;
+      font-family: "futura_m";
+      color: var(--white);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+    .srv-payment__tag {
+      font-size: 1.1rem;
+      color: var(--accent-pink);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2.4rem;
+    }
+    .srv-payment__list {
+      list-style: none;
+    }
+    .srv-payment__list li {
+      font-size: 1.3rem;
+      color: var(--text-main);
+      padding: 0.9rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      line-height: 1.5;
+    }
+    .srv-payment__list li::before {
+      content: '✓ ';
+      color: var(--accent-pink);
+    }
+
+    /* ════════════════════════════════
+       07 — CTA FINAL
+    ════════════════════════════════ */
+    .srv-cta {
+      background: linear-gradient(135deg, #061c37 0%, var(--bg-main) 55%, #210633 100%);
+      padding: 14.4rem 0;
+      text-align: center;
+    }
+    @media screen and (max-width:800px) { .srv-cta { padding: 8rem 0; } }
+
+    .srv-cta__label {
+      font-size: 1.3rem;
+      color: var(--accent-pink);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      font-family: "futura_m";
+      display: block;
+      margin-bottom: 2.4rem;
+    }
+    .srv-cta__title {
+      font-size: 7rem;
+      font-family: "futura_m";
+      color: var(--white);
+      letter-spacing: 0.06em;
+      line-height: 1.05;
+      margin-bottom: 2.4rem;
+    }
+    @media screen and (max-width:800px) { .srv-cta__title { font-size: 4.8rem; } }
+    @media screen and (max-width:420px) { .srv-cta__title { font-size: 3.2rem; } }
+
+    .srv-cta__sub {
+      font-size: 1.8rem;
+      color: var(--text-light-gray);
+      margin-bottom: 5.6rem;
+      line-height: 1.6;
+    }
+    .srv-cta__scarcity {
+      display: block;
+      font-size: 1.4rem;
+      color: var(--text-main);
+      letter-spacing: 0.08em;
+      margin-top: 2.4rem;
+    }
+    .srv-cta__links {
+      display: flex;
+      gap: 3.2rem;
+      justify-content: center;
+      margin-top: 4.8rem;
+      flex-wrap: wrap;
+    }
+    .srv-cta__link {
+      font-size: 1.6rem;
+      color: var(--text-main);
+      letter-spacing: 0.1em;
+      transition: color .3s;
+    }
+    .srv-cta__link:hover { color: var(--accent-pink); }
+  </style>
+</head>
+
+<body>
+  <header><a class="name" href="./"><img src="logo.png" alt="Nivela Studio — Diseño Web"><span class="logo-text">Nivela Studio</span></a>
+    <div class="wrap">
+      <div class="lang-switcher">
+        <input type="checkbox" id="lang-toggle" class="lang-toggle__input">
+        <label for="lang-toggle" class="lang-toggle">
+          <span class="lang-toggle__text lang-toggle__text--es">ES</span>
+          <span class="lang-toggle__slider"></span>
+          <span class="lang-toggle__text lang-toggle__text--en">EN</span>
+        </label>
+      </div>
+      <div class="menuIcon js-menuBtn"></div>
+    </div>
+    <nav class="global-nav">
+      <ul class="global-nav__list">
+        <li><a href="./" data-es="INICIO" data-en="HOME">INICIO</a></li>
+        <li><a href="./amarena.html" data-es="TRABAJOS" data-en="WORKS">TRABAJOS</a></li>
+        <li><a href="./servicios.html" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a></li>
+        <li><a href="./about.html" data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
+        <li><a class="js-contact" href="./#contact" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="curtain"></div>
+    <div class="loader"></div>
+  </header>
+
+  <main id="barba-wrapper">
+    <div class="barba-container" data-namespace="underlayer">
+
+      <!-- ════════════════════════════════
+           HERO
+      ════════════════════════════════ -->
+      <div class="page-top">
+        <div class="page-top__inner">
+          <a class="back-arrow" href="./">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="34" viewBox="0 0 67 34">
+              <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" transform="translate(2 1)">
+                <path stroke-width="2" d="M0,15.5533333 L64,15.5533333"/>
+                <polyline stroke-width="2" points="15.556 0 0 15.556 15.556 31.111"/>
+              </g>
+            </svg>
+          </a>
+          <div class="title">
+            <h1 class="title__text js-letter"
+                data-es="SERVICIOS"
+                data-en="SERVICES">SERVICIOS</h1>
+            <div class="border js-toRight"><span></span><span></span></div>
+            <p class="title__lead js-letter"
+               data-es-html="Sitios web que trabajan<br>mientras vos descansás."
+               data-en-html="Websites that work<br>while you sleep.">
+              Sitios web que trabajan<br>mientras vos descansás.
+            </p>
+            <div class="btn-wrap js-letter">
+              <a class="btn" href="#contacto"
+                 data-es="Cotizá Gratis"
+                 data-en="Get a Free Quote">Cotizá Gratis</a>
+            </div>
+          </div>
+          <div class="image image__servicios"></div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════
+           01 — LA REALIDAD
+      ════════════════════════════════ -->
+      <section class="srv-light">
+        <div class="content">
+          <div class="text text--top">
+            <p class="heading-num">01</p>
+            <div class="text__wrap text__wrap--top content">
+              <h2 class="heading heading--top"
+                  data-es="LA REALIDAD"
+                  data-en="THE REALITY">LA REALIDAD</h2>
+              <p class="srv-intro-text"
+                 data-es="Las personas buscan en línea antes de comprar — ¿estás ahí?"
+                 data-en="People search online before buying — are you there?">
+                Las personas buscan en línea antes de comprar — ¿estás ahí?
+              </p>
+            </div>
+          </div>
+
+          <div class="srv-stats">
+            <div class="srv-stat">
+              <span class="srv-stat__number">97%</span>
+              <p class="srv-stat__label"
+                 data-es="de los consumidores busca negocios locales en línea antes de comprar"
+                 data-en="of consumers search local businesses online before buying">
+                de los consumidores busca negocios locales en línea antes de comprar
+              </p>
+            </div>
+            <div class="srv-stat">
+              <span class="srv-stat__number">75%</span>
+              <p class="srv-stat__label"
+                 data-es="juzga la credibilidad de un negocio por su sitio web"
+                 data-en="judge a business's credibility by its website">
+                juzga la credibilidad de un negocio por su sitio web
+              </p>
+            </div>
+            <div class="srv-stat">
+              <span class="srv-stat__number">56%</span>
+              <p class="srv-stat__label"
+                 data-es="no confía en un negocio sin sitio web"
+                 data-en="don't trust a business without a website">
+                no confía en un negocio sin sitio web
+              </p>
+            </div>
+          </div>
+
+          <p class="srv-callout"
+             data-es="Sin un sitio web, sos invisible al 97% de tus clientes potenciales."
+             data-en="Without a website, you're invisible to 97% of your potential customers.">
+            Sin un sitio web, sos invisible al 97% de tus clientes potenciales.
+          </p>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════
+           02 — PLANES
+      ════════════════════════════════ -->
+      <section class="srv-gray">
+        <div class="content">
+          <div class="text text--top">
+            <p class="heading-num">02</p>
+            <div class="text__wrap text__wrap--top content">
+              <h2 class="heading heading--top"
+                  data-es="ELEGÍ TU PLAN"
+                  data-en="CHOOSE YOUR PLAN">ELEGÍ TU PLAN</h2>
+              <p class="srv-intro-text"
+                 data-es="Tres planes diseñados para crecer con tu negocio."
+                 data-en="Three plans designed to grow with your business.">
+                Tres planes diseñados para crecer con tu negocio.
+              </p>
+            </div>
+          </div>
+
+          <div class="srv-plans-grid">
+
+            <!-- ESENCIAL -->
+            <div class="srv-plan">
+              <p class="srv-plan__eyebrow"
+                 data-es="Más accesible"
+                 data-en="Most accessible">Más accesible</p>
+              <h3 class="srv-plan__name">ESENCIAL</h3>
+              <p class="srv-plan__type"
+                 data-es="Landing Page"
+                 data-en="Landing Page">Landing Page</p>
+              <span class="srv-plan__price-old">$397 USD</span>
+              <span class="srv-plan__price">$297</span>
+              <span class="srv-plan__price-note"
+                    data-es="USD finales · sin costos ocultos"
+                    data-en="final USD · no hidden costs">USD finales · sin costos ocultos</span>
+              <hr class="srv-plan__divider">
+              <ul class="srv-plan__features">
+                <li data-es="Sitio de una página" data-en="Single page website">Sitio de una página</li>
+                <li data-es="Responsive para móvil" data-en="Mobile responsive">Responsive para móvil</li>
+                <li data-es="Secciones de llamada a la acción" data-en="Call-to-action sections">Secciones de llamada a la acción</li>
+                <li data-es="Formulario de contacto y WhatsApp" data-en="Contact form and WhatsApp">Formulario de contacto y WhatsApp</li>
+                <li data-es="Links de redes sociales" data-en="Social media links">Links de redes sociales</li>
+                <li data-es="Integración Google Maps" data-en="Google Maps integration">Integración Google Maps</li>
+                <li data-es="SEO on-page básico" data-en="Basic on-page SEO">SEO on-page básico</li>
+                <li data-es="Entrega rápida: 5–7 días" data-en="Fast delivery: 5–7 days">Entrega rápida: 5–7 días</li>
+              </ul>
+              <a href="#contacto" class="srv-plan__cta"
+                 data-es="Empezar →"
+                 data-en="Get Started →">Empezar →</a>
+            </div>
+
+            <!-- ESTÁNDAR -->
+            <div class="srv-plan srv-plan--popular">
+              <span class="srv-plan__badge"
+                    data-es="⭐ Más Popular"
+                    data-en="⭐ Most Popular">⭐ Más Popular</span>
+              <p class="srv-plan__eyebrow"
+                 data-es="Recomendado"
+                 data-en="Recommended">Recomendado</p>
+              <h3 class="srv-plan__name">ESTÁNDAR</h3>
+              <p class="srv-plan__type"
+                 data-es="Multipágina Profesional"
+                 data-en="Professional Multi-page">Multipágina Profesional</p>
+              <span class="srv-plan__price-old">$797 USD</span>
+              <span class="srv-plan__price">$697</span>
+              <span class="srv-plan__price-note"
+                    data-es="USD finales · sin costos ocultos"
+                    data-en="final USD · no hidden costs">USD finales · sin costos ocultos</span>
+              <hr class="srv-plan__divider">
+              <ul class="srv-plan__features">
+                <li data-es="Sitio de 5–8 páginas" data-en="5–8 page website">Sitio de 5–8 páginas</li>
+                <li data-es="Inicio, Acerca, Servicios, Contacto y más" data-en="Home, About, Services, Contact and more">Inicio, Acerca, Servicios, Contacto y más</li>
+                <li data-es="Diseño profesional y personalizado" data-en="Professional custom design">Diseño profesional y personalizado</li>
+                <li data-es="Sección de Blog / Noticias" data-en="Blog / News section">Sección de Blog / Noticias</li>
+                <li data-es="SEO completo y meta etiquetas" data-en="Full SEO and meta tags">SEO completo y meta etiquetas</li>
+                <li data-es="Configuración de email profesional" data-en="Professional email setup">Configuración de email profesional</li>
+                <li data-es="Integración Google Analytics" data-en="Google Analytics integration">Integración Google Analytics</li>
+                <li data-es="Formularios y captura de leads" data-en="Forms and lead capture">Formularios y captura de leads</li>
+              </ul>
+              <a href="#contacto" class="srv-plan__cta"
+                 data-es="Empezar →"
+                 data-en="Get Started →">Empezar →</a>
+            </div>
+
+            <!-- PREMIUM -->
+            <div class="srv-plan">
+              <p class="srv-plan__eyebrow"
+                 data-es="Full business power"
+                 data-en="Full business power">Full business power</p>
+              <h3 class="srv-plan__name">PREMIUM</h3>
+              <p class="srv-plan__type"
+                 data-es="E-commerce + IA"
+                 data-en="E-commerce + AI">E-commerce + IA</p>
+              <span class="srv-plan__price-old">$1997 USD</span>
+              <span class="srv-plan__price">$1497</span>
+              <span class="srv-plan__price-note"
+                    data-es="USD finales · sin costos ocultos"
+                    data-en="final USD · no hidden costs">USD finales · sin costos ocultos</span>
+              <hr class="srv-plan__divider">
+              <ul class="srv-plan__features">
+                <li data-es="Tienda en línea completa" data-en="Full online store">Tienda en línea completa</li>
+                <li data-es="Agente de IA para atención 24/7" data-en="AI agent for 24/7 support">Agente de IA para atención 24/7</li>
+                <li data-es="Diseño 100% personalizado" data-en="100% custom design">Diseño 100% personalizado</li>
+                <li data-es="Catálogo de productos e inventario" data-en="Product catalog and inventory">Catálogo de productos e inventario</li>
+                <li data-es="Pasarela de pago segura" data-en="Secure payment gateway">Pasarela de pago segura</li>
+                <li data-es="SEO avanzado" data-en="Advanced SEO">SEO avanzado</li>
+                <li data-es="VPS / Cloud Hosting incluido" data-en="VPS / Cloud Hosting included">VPS / Cloud Hosting incluido</li>
+                <li data-es="Soporte prioritario" data-en="Priority support">Soporte prioritario</li>
+              </ul>
+              <a href="#contacto" class="srv-plan__cta"
+                 data-es="Empezar →"
+                 data-en="Get Started →">Empezar →</a>
+            </div>
+
+          </div><!-- .srv-plans-grid -->
+
+          <p class="srv-plans-note"
+             data-es="* Precios no incluyen hosting + dominio. Son activos digitales de tu propiedad."
+             data-en="* Prices exclude hosting + domain. These are digital assets you own.">
+            * Precios no incluyen hosting + dominio. Son activos digitales de tu propiedad.
+          </p>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════
+           03 — POR QUÉ CONMIGO
+      ════════════════════════════════ -->
+      <section class="srv-light">
+        <div class="content">
+          <div class="text text--top">
+            <p class="heading-num">03</p>
+            <div class="text__wrap text__wrap--top content">
+              <h2 class="heading heading--top"
+                  data-es="POR QUÉ CONMIGO"
+                  data-en="WHY WORK WITH ME">POR QUÉ CONMIGO</h2>
+              <div>
+                <ul class="srv-whyme-list">
+                  <li class="srv-whyme-item"
+                      data-es="Diseños únicos y personalizados — sin plantillas genéricas"
+                      data-en="Unique custom designs — no generic templates">
+                    Diseños únicos y personalizados — sin plantillas genéricas
+                  </li>
+                  <li class="srv-whyme-item"
+                      data-es="Entrega rápida con plazos e hitos claros"
+                      data-en="Fast delivery with clear timelines and milestones">
+                    Entrega rápida con plazos e hitos claros
+                  </li>
+                  <li class="srv-whyme-item"
+                      data-es="Mobile-first y optimizado para SEO desde el primer día"
+                      data-en="Mobile-first and SEO-optimized from day one">
+                    Mobile-first y optimizado para SEO desde el primer día
+                  </li>
+                  <li class="srv-whyme-item"
+                      data-es="Soporte continuo — no desaparezco después del lanzamiento"
+                      data-en="Ongoing support — I don't disappear after launch">
+                    Soporte continuo — no desaparezco después del lanzamiento
+                  </li>
+                  <li class="srv-whyme-item"
+                      data-es="Todo en uno: diseño, contenido, branding y marketing"
+                      data-en="All-in-one: design, content, branding and marketing">
+                    Todo en uno: diseño, contenido, branding y marketing
+                  </li>
+                </ul>
+                <blockquote class="srv-quote"
+                   data-es='"Su visión, codificada en la realidad."'
+                   data-en='"Your vision, coded into reality."'>
+                  "Su visión, codificada en la realidad."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════
+           04 — EL PROCESO
+      ════════════════════════════════ -->
+      <section class="srv-dark">
+        <div class="content">
+          <div class="text text--top">
+            <p class="heading-num" style="color:rgba(255,255,255,0.05);">04</p>
+            <div class="text__wrap text__wrap--top content">
+              <h2 class="heading heading--top" style="color:var(--white);"
+                  data-es="EL PROCESO"
+                  data-en="THE PROCESS">EL PROCESO</h2>
+              <p class="srv-intro-text"
+                 data-es="Simple y transparente — sabés exactamente qué pasa en cada etapa."
+                 data-en="Simple and transparent — you know exactly what happens at each stage.">
+                Simple y transparente — sabés exactamente qué pasa en cada etapa.
+              </p>
+            </div>
+          </div>
+
+          <div class="srv-process-grid">
+            <div class="srv-step">
+              <span class="srv-step__num">01</span>
+              <h3 class="srv-step__title"
+                  data-es="LLAMADA DE DESCUBRIMIENTO"
+                  data-en="DISCOVERY CALL">LLAMADA DE DESCUBRIMIENTO</h3>
+              <p class="srv-step__text"
+                 data-es="Hablamos de tu negocio, metas y público objetivo. Entiendo qué necesitás antes de proponer nada."
+                 data-en="We talk about your business, goals and target audience before I propose anything.">
+                Hablamos de tu negocio, metas y público objetivo. Entiendo qué necesitás antes de proponer nada.
+              </p>
+            </div>
+            <div class="srv-step">
+              <span class="srv-step__num">02</span>
+              <h3 class="srv-step__title"
+                  data-es="PROPUESTA Y PLAN"
+                  data-en="PROPOSAL & PLAN">PROPUESTA Y PLAN</h3>
+              <p class="srv-step__text"
+                 data-es="Envío una propuesta detallada con alcance, cronograma y precios — sin costos ocultos."
+                 data-en="I send a detailed proposal with scope, timeline and pricing — no hidden costs.">
+                Envío una propuesta detallada con alcance, cronograma y precios — sin costos ocultos.
+              </p>
+            </div>
+            <div class="srv-step">
+              <span class="srv-step__num">03</span>
+              <h3 class="srv-step__title"
+                  data-es="DISEÑO Y DESARROLLO"
+                  data-en="DESIGN & DEVELOPMENT">DISEÑO Y DESARROLLO</h3>
+              <p class="srv-step__text"
+                 data-es="Diseño y desarrollo tu sitio con vistas previas regulares para que siempre estés al tanto."
+                 data-en="I design and build your site with regular previews so you're always in the loop.">
+                Diseño y desarrollo tu sitio con vistas previas regulares para que siempre estés al tanto.
+              </p>
+            </div>
+            <div class="srv-step">
+              <span class="srv-step__num">04</span>
+              <h3 class="srv-step__title"
+                  data-es="REVISIÓN Y LANZAMIENTO"
+                  data-en="REVIEW & LAUNCH">REVISIÓN Y LANZAMIENTO</h3>
+              <p class="srv-step__text"
+                 data-es="Revisás el resultado final, hacemos ajustes y lanzamos — ¡tu sitio está en vivo!"
+                 data-en="You review the final result, we make adjustments and launch — your site is live!">
+                Revisás el resultado final, hacemos ajustes y lanzamos — ¡tu sitio está en vivo!
+              </p>
+            </div>
+          </div>
+
+          <div class="srv-process-footer">
+            <p class="srv-delivery"
+               data-es-html="⚡ Entrega típica: <span>Esencial 5–7 días</span> · <span>Estándar 2–3 semanas</span> · <span>Premium 3–5 semanas</span>"
+               data-en-html="⚡ Typical delivery: <span>Essential 5–7 days</span> · <span>Standard 2–3 weeks</span> · <span>Premium 3–5 weeks</span>">
+              ⚡ Entrega típica: <span>Esencial 5–7 días</span> · <span>Estándar 2–3 semanas</span> · <span>Premium 3–5 semanas</span>
+            </p>
+            <span class="srv-guarantee"
+                  data-es="✓ Garantía de satisfacción 15 días post-entrega"
+                  data-en="✓ 15-day satisfaction guarantee after delivery">
+              ✓ Garantía de satisfacción 15 días post-entrega
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════
+           05 — SERVICIOS ADICIONALES
+      ════════════════════════════════ -->
+      <section class="srv-light">
+        <div class="content">
+          <div class="text text--top">
+            <p class="heading-num">05</p>
+            <div class="text__wrap text__wrap--top content">
+              <h2 class="heading heading--top"
+                  data-es="SERVICIOS ADICIONALES"
+                  data-en="ADD-ON SERVICES">SERVICIOS ADICIONALES</h2>
+              <p class="srv-intro-text"
+                 data-es="Potenciá tu presencia web más allá del sitio."
+                 data-en="Power up your web presence beyond the website.">
+                Potenciá tu presencia web más allá del sitio.
+              </p>
+            </div>
+          </div>
+
+          <div class="srv-addons-grid">
+            <div class="srv-addon">
+              <span class="srv-addon__icon">🎨</span>
+              <h3 class="srv-addon__name"
+                  data-es="Diseño de Identidad Visual"
+                  data-en="Visual Identity Design">Diseño de Identidad Visual</h3>
+              <p class="srv-addon__text"
+                 data-es="Logo, paleta de colores, tipografías e identidad visual que te hace memorable y diferente."
+                 data-en="Logo, color palette, typography and visual identity that makes you memorable and different.">
+                Logo, paleta de colores, tipografías e identidad visual que te hace memorable y diferente.
+              </p>
+            </div>
+            <div class="srv-addon">
+              <span class="srv-addon__icon">📈</span>
+              <h3 class="srv-addon__name"
+                  data-es="Optimización SEO Mensual"
+                  data-en="Monthly SEO Optimization">Optimización SEO Mensual</h3>
+              <p class="srv-addon__text"
+                 data-es="Estrategia de keywords, contenido y código. Subí en Google y sé encontrado por los clientes correctos."
+                 data-en="Keywords strategy, content and code. Climb Google and be found by the right customers.">
+                Estrategia de keywords, contenido y código. Subí en Google y sé encontrado por los clientes correctos.
+              </p>
+            </div>
+            <div class="srv-addon">
+              <span class="srv-addon__icon">📷</span>
+              <h3 class="srv-addon__name">
+                <span data-es="Sesión de Fotografía" data-en="Photography Session">Sesión de Fotografía</span>
+                <span class="srv-addon__soon"
+                      data-es="Próximamente"
+                      data-en="Coming Soon">Próximamente</span>
+              </h3>
+              <p class="srv-addon__text"
+                 data-es="Imágenes profesionales para redes, sitio web y materiales de comunicación que elevan tu marca."
+                 data-en="Professional photos for social media, website and communications that elevate your brand.">
+                Imágenes profesionales para redes, sitio web y materiales de comunicación que elevan tu marca.
+              </p>
+            </div>
+            <div class="srv-addon">
+              <span class="srv-addon__icon">✍️</span>
+              <h3 class="srv-addon__name"
+                  data-es="Copywriting y Blog Mensual"
+                  data-en="Copywriting and Monthly Blog">Copywriting y Blog Mensual</h3>
+              <p class="srv-addon__text"
+                 data-es="Textos atractivos y consistentes que mejoran el SEO. Convierte lectores en clientes."
+                 data-en="Engaging and consistent texts that improve SEO. Convert readers into customers.">
+                Textos atractivos y consistentes que mejoran el SEO. Convierte lectores en clientes.
+              </p>
+            </div>
+            <div class="srv-addon">
+              <span class="srv-addon__icon">🤖</span>
+              <h3 class="srv-addon__name">
+                <span data-es="Agente de IA" data-en="AI Agent">Agente de IA</span>
+                <span class="srv-addon__soon"
+                      data-es="Próximamente"
+                      data-en="Coming Soon">Próximamente</span>
+              </h3>
+              <p class="srv-addon__text"
+                 data-es="Asistentes inteligentes que responden, analizan y ejecutan tareas sin intervención humana, 24/7."
+                 data-en="Smart assistants that respond, analyze and execute tasks without human input, 24/7.">
+                Asistentes inteligentes que responden, analizan y ejecutan tareas sin intervención humana, 24/7.
+              </p>
+            </div>
+            <div class="srv-addon">
+              <span class="srv-addon__icon">📧</span>
+              <h3 class="srv-addon__name"
+                  data-es="Email Marketing y Automatizaciones"
+                  data-en="Email Marketing and Automations">Email Marketing y Automatizaciones</h3>
+              <p class="srv-addon__text"
+                 data-es="Campañas que nutren, convierten y fidelizan. Secuencias, newsletters, carritos abandonados y más."
+                 data-en="Campaigns that nurture, convert and build loyalty. Sequences, newsletters, abandoned carts and more.">
+                Campañas que nutren, convierten y fidelizan. Secuencias, newsletters, carritos abandonados y más.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════
+           06 — OPCIONES DE PAGO
+      ════════════════════════════════ -->
+      <section class="srv-dark">
+        <div class="content">
+          <div class="text text--top">
+            <p class="heading-num" style="color:rgba(255,255,255,0.05);">06</p>
+            <div class="text__wrap text__wrap--top content">
+              <h2 class="heading heading--top" style="color:var(--white);"
+                  data-es="OPCIONES DE PAGO"
+                  data-en="PAYMENT OPTIONS">OPCIONES DE PAGO</h2>
+              <p class="srv-intro-text"
+                 data-es="Pagás como te sea más cómodo, desde cualquier parte del mundo."
+                 data-en="Pay however is most convenient, from anywhere in the world.">
+                Pagás como te sea más cómodo, desde cualquier parte del mundo.
+              </p>
+            </div>
+          </div>
+
+          <div class="srv-payments-grid">
+            <div class="srv-payment srv-payment--rec">
+              <h3 class="srv-payment__name">Western Union</h3>
+              <span class="srv-payment__tag"
+                    data-es="Recomendado"
+                    data-en="Recommended">Recomendado</span>
+              <ul class="srv-payment__list">
+                <li data-es="Pago en efectivo o transferencia" data-en="Cash or bank transfer">Pago en efectivo o transferencia</li>
+                <li data-es="Tarjeta de crédito / débito" data-en="Credit / debit card">Tarjeta de crédito / débito</li>
+                <li data-es="Recibido al instante" data-en="Received instantly">Recibido al instante</li>
+                <li data-es="Sin cuenta bancaria necesaria" data-en="No bank account needed">Sin cuenta bancaria necesaria</li>
+              </ul>
+            </div>
+            <div class="srv-payment">
+              <h3 class="srv-payment__name">USDT / Crypto</h3>
+              <span class="srv-payment__tag"
+                    data-es="Sin fronteras"
+                    data-en="Borderless">Sin fronteras</span>
+              <ul class="srv-payment__list">
+                <li data-es="Transferencia al instante" data-en="Instant transfer">Transferencia al instante</li>
+                <li data-es="Sin comisiones bancarias" data-en="No bank fees">Sin comisiones bancarias</li>
+                <li data-es="100% digital, desde cualquier lugar" data-en="100% digital, from anywhere">100% digital, desde cualquier lugar</li>
+                <li data-es="Para clientes con billetera crypto" data-en="For clients with crypto wallet">Para clientes con billetera crypto</li>
+              </ul>
+            </div>
+            <div class="srv-payment">
+              <h3 class="srv-payment__name">Transferencia</h3>
+              <span class="srv-payment__tag"
+                    data-es="Solo Argentina"
+                    data-en="Argentina only">Solo Argentina</span>
+              <ul class="srv-payment__list">
+                <li data-es="CBU / CVU — Brubank o Macro" data-en="CBU / CVU — Brubank or Macro">CBU / CVU — Brubank o Macro</li>
+                <li data-es="Sin comisiones entre cuentas AR" data-en="No fees between AR accounts">Sin comisiones entre cuentas AR</li>
+              </ul>
+            </div>
+            <div class="srv-payment">
+              <h3 class="srv-payment__name">PIX</h3>
+              <span class="srv-payment__tag"
+                    data-es="Solo Brasil"
+                    data-en="Brazil only">Solo Brasil</span>
+              <ul class="srv-payment__list">
+                <li data-es="Transferencia instantánea en reales" data-en="Instant transfer in reais">Transferencia instantánea en reales</li>
+                <li data-es="Desde cualquier banco de Brasil" data-en="From any Brazilian bank">Desde cualquier banco de Brasil</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════
+           07 — CTA FINAL
+      ════════════════════════════════ -->
+      <section class="srv-cta" id="contacto">
+        <div class="content">
+          <span class="srv-cta__label"
+                data-es="¿LISTO PARA CRECER?"
+                data-en="READY TO GROW?">¿LISTO PARA CRECER?</span>
+          <h2 class="srv-cta__title"
+              data-es-html="Construyamos tu<br>sitio web perfecto."
+              data-en-html="Let's build your<br>perfect website.">
+            Construyamos tu<br>sitio web perfecto.
+          </h2>
+          <p class="srv-cta__sub"
+             data-es="Todo negocio exitoso empezó en algún lugar. Comencemos el tuyo en línea hoy."
+             data-en="Every successful business started somewhere. Let's start yours online today.">
+            Todo negocio exitoso empezó en algún lugar. Comencemos el tuyo en línea hoy.
+          </p>
+          <a href="mailto:yataghan073@gmail.com" class="btn"
+             data-es="Obtené tu Cotización Gratis"
+             data-en="Get Your Free Quote">
+            Obtené tu Cotización Gratis
+          </a>
+          <span class="srv-cta__scarcity"
+                data-es="Solo acepto 3 proyectos por mes — asegurá tu lugar."
+                data-en="I only take 3 projects per month — secure your spot.">
+            Solo acepto 3 proyectos por mes — asegurá tu lugar.
+          </span>
+          <div class="srv-cta__links">
+            <a href="mailto:yataghan073@gmail.com" class="srv-cta__link">yataghan073@gmail.com</a>
+            <a href="https://wa.me/543513714586" target="_blank" class="srv-cta__link">WhatsApp +54 351 371-4586</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a href="mailto:yataghan073@gmail.com">yataghan073@gmail.com</a>
+        <a href="https://wa.me/543513714586" target="_blank">WhatsApp</a>
+      </footer>
+
+    </div><!-- .barba-container -->
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/jquery.fullPage.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./assets/js/parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+  <script src="./assets/js/common.min.js"></script>
+  <script src="./assets/js/lang.js"></script>
+</body>
+
+</html>
