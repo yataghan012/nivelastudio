@@ -59,7 +59,7 @@ export default function App() {
     <>
       <header>
         <a className="name" href="./">
-          <img src="logo.png" alt="Nivela Studio — Diseño Web" />
+          <img src="/assets/img/logo.png" alt="Nivela Studio — Diseño Web" />
           <span className="logo-text">Nivela Studio</span>
         </a>
         <div className="wrap">
