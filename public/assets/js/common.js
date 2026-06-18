@@ -1,4 +1,9 @@
 /**
+ * Fallback to prevent ReferenceError if Google Analytics is not mounted
+ */
+window.ga = window.ga || function() {};
+
+/**
  * Main FullPage.js initialization and scroll logic
  */
 function fullPage() {
@@ -102,6 +107,49 @@ function fullPage() {
                 var num = i + 1;
                 $(this).addClass("fp-section-" + num);
             });
+
+            // Animate active section if we landed on page-num > 1 on cold-load or transition
+            var activeSection = $(".section.active");
+            var activeIndex = $(".section").index(activeSection) + 1;
+            if (activeIndex > 1) {
+                var nextClass = ".fp-section-" + activeIndex;
+                var timeline = anime.timeline();
+                timeline
+                    .add({
+                        targets: nextClass + " .image",
+                        scale: [0.85, 1],
+                        translateX: ["10%", 0],
+                        translateZ: 0,
+                        easing: "easeOutCubic",
+                        duration: 1500,
+                        delay: 500
+                    })
+                    .add({
+                        targets: nextClass + " .image__cover",
+                        translateX: [0, "110%"],
+                        translateZ: 0,
+                        easing: "easeInOutQuart",
+                        duration: function (el, i) { return 1200 - 200 * i; },
+                        offset: "-=1700"
+                    })
+                    .add({
+                        targets: nextClass + " .page-num p",
+                        translateY: ["100%", 0],
+                        translateZ: 0,
+                        easing: "easeInOutCubic",
+                        duration: 1000,
+                        offset: "-=1200"
+                    })
+                    .add({
+                        targets: nextClass + " .js-letter",
+                        translateX: ["-105%", 0],
+                        translateZ: 0,
+                        easing: "easeInOutCubic",
+                        duration: 800,
+                        delay: function (el, i) { return 50 * i; },
+                        offset: "-=1500"
+                    });
+            }
         }
     });
 }
@@ -241,7 +289,9 @@ Barba.Dispatcher.on("newPageReady", function () {
         $(".page-top").height($(window).height());
     }
     // Google Analytics track
-    ga("send", "pageview", window.location.pathname.replace(/^\/?/, "/") + window.location.search);
+    if (typeof ga === "function") {
+        ga("send", "pageview", window.location.pathname.replace(/^\/?/, "/") + window.location.search);
+    }
 });
 
 /**

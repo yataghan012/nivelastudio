@@ -1032,6 +1032,9 @@ header .global-nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: clamp(2rem, 5vh, 6rem) 2rem;
+  overflow-y: auto;
+  box-sizing: border-box;
   -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -1051,13 +1054,14 @@ header .global-nav.js-open a {
 }
 
 header .global-nav__list {
-  text-align: center
+  text-align: center;
+  width: 100%;
 }
 
 header .global-nav__list li {
-  margin-top: 7.2rem;
+  margin-top: clamp(1.8rem, 4.5vh, 5.5rem);
   position: relative;
-  padding: 0 153px;
+  padding: 0 20px;
   overflow: hidden
 }
 
@@ -1068,15 +1072,15 @@ header .global-nav__list li:first-child {
 @media screen and (max-width:420px) {
   header .global-nav__list li {
     padding: 0;
-    margin-top: 3.2rem
+    margin-top: clamp(1.5rem, 3.5vh, 3.2rem)
   }
 }
 
 header .global-nav__list a {
   display: inline-block;
   color: var(--white);
-  font-size: 12rem;
-  line-height: 1;
+  font-size: clamp(3rem, 7.5vh, 10rem);
+  line-height: 1.1;
   letter-spacing: 0.1em;
   font-family: "futura_m";
   font-weight: normal;
@@ -1090,14 +1094,32 @@ header .global-nav__list a {
 
 @media screen and (max-width:800px) {
   header .global-nav__list a {
-    font-size: 7.6rem
+    font-size: clamp(3rem, 7vh, 7.6rem)
   }
 }
 
 @media screen and (max-width:420px) {
   header .global-nav__list a {
-    font-size: 3.8rem;
+    font-size: clamp(2.4rem, 6.2vh, 3.8rem);
     text-shadow: 0 3px 20px rgba(2, 11, 22, 0.2)
+  }
+}
+
+/* Specific heights constraints to prevent cut-offs on ultra-short viewpoints */
+@media screen and (max-height: 600px) {
+  header .global-nav__list li {
+    margin-top: clamp(1.2rem, 3vh, 2.5rem);
+  }
+  header .global-nav__list a {
+    font-size: clamp(2.2rem, 6vh, 4.5rem);
+  }
+}
+@media screen and (max-height: 420px) {
+  header .global-nav__list li {
+    margin-top: 1rem;
+  }
+  header .global-nav__list a {
+    font-size: 5.5vh;
   }
 }
 
